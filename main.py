@@ -1,4 +1,6 @@
 import json  # 未使用的 import
+import flask
+import requests
 
 def add(a,b):    # 參數間沒有空格
     result = a+b  # 運算子前後缺空格
