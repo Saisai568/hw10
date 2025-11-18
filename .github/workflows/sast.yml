@@ -1,0 +1,12 @@
+name: SAST
+
+on: [push, pull_request]
+
+jobs:
+  semgrep_scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Semgrep
+        run: semgrep --config=semgrep-rules.yml .
+        
