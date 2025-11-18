@@ -1,6 +1,6 @@
 version: 2
 updates:
   - package-ecosystem: "pip"
-    directory: "/"
+    directory: "/"  # 指向根目錄
     schedule:
       interval: "weekly"
